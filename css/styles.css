@@ -41,6 +41,14 @@ body {
 main {
     margin-left: 300px;
     padding: 20px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: 280px;
+}
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 .hero {
     text-align: center;
