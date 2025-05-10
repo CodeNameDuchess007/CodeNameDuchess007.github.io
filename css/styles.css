@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0f24;
+    color: #f0f0f0;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #111630;
+    padding-top: 20px;
+}
+.sidebar .logo {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+.sidebar ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+main {
+    margin-left: 200px;
+    padding: 20px;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+.hero p {
+    font-size: 1.2em;
+    color: #aad1ff;
+}
+section {
+    margin-bottom: 60px;
+}
+h2 {
+    color: #aad1ff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+h3 {
+    margin-top: 20px;
+    color: #aad1ff;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.project-item {
+    background: #1a1f3d;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.3s;
+    cursor: pointer;
+}
+.project-item:hover {
+    transform: scale(1.05);
+    background: #2a3057;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111630;
+    color: #888;
+    font-size: 0.9em;
+}
+footer a {
+    color: #aad1ff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
