@@ -9,7 +9,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 280px;
+    width: 300px;
     height: 100%;
     background: #111630;
     padding-top: 20px;
@@ -39,7 +39,7 @@ body {
     vertical-align: middle;
 }
 main {
-    margin-left: 280px;
+    margin-left: 300px;
     padding: 20px;
 }
 .hero {
