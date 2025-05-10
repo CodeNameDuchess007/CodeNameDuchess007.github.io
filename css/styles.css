@@ -33,6 +33,11 @@ body {
     font-weight: 600;
     font-size: 1.1em;
 }
+.sidebar ul li a i {
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
 main {
     margin-left: 200px;
     padding: 20px;
