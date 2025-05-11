@@ -21,12 +21,15 @@ body {
 }
 .menu-toggle {
     display: none;
+    position: fixed; /* <-- Change from 'absolute' if you had it */
+    top: 15px;
+    left: 15px;
     background: none;
     border: none;
     color: #f0f0f0;
     font-size: 2rem;
-    margin: 10px;
     cursor: pointer;
+    z-index: 1001; /* Make sure it's on top */
 }
 .sidebar ul {
     list-style: none;
@@ -135,10 +138,6 @@ footer a:hover {
     }
     .menu-toggle {
         display: block;
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        z-index: 1000;
     }
     .sidebar ul {
         text-align: center;
