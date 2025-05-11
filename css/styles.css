@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -13,11 +12,21 @@ body {
     height: 100%;
     background: #111630;
     padding-top: 20px;
+    transition: transform 0.3s ease;
 }
 .sidebar .logo {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 30px;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 2rem;
+    margin: 10px;
+    cursor: pointer;
 }
 .sidebar ul {
     list-style: none;
@@ -39,7 +48,7 @@ body {
     vertical-align: middle;
 }
 main {
-    margin-left: 300px; /* stay shifted right of sidebar */
+    margin-left: 300px;
     padding: 20px;
 }
 .main-container {
@@ -111,4 +120,38 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 60px;
+        background: #111630;
+    }
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 1000;
+    }
+    .sidebar ul {
+        text-align: center;
+    }
+    .sidebar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    main {
+        margin-left: 0;
+        padding-top: 80px;
+    }
+    .hero {
+        padding-top: 20px;
+    }
 }
