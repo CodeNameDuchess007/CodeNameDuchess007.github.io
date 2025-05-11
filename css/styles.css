@@ -39,11 +39,8 @@ body {
     vertical-align: middle;
 }
 main {
-    margin-left: 300px;
+    margin-left: 300px; /* stay shifted right of sidebar */
     padding: 20px;
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: 300px;
 }
 .main-container {
     max-width: 800px;
