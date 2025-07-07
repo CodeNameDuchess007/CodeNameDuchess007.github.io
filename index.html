@@ -13,6 +13,7 @@
             sidebar.classList.toggle('active');
         }
     </script>
+    <script src="js/project.js"></script>
 </head>
 <body>
 
@@ -58,7 +59,7 @@
     <section id="powerbi" class="projects">
         <h2>Power BI Projects</h2>
         <div class="project-grid">
-            <div class="project-item">DLL Analysis</div>
+            <div class="project-item" data-modal="dllModal">DLL Analysis</div>
             <div class="project-item">SSID Action Items Metrics</div>
             <div class="project-item">CM Modernization Timeline</div>
             <div class="project-item">DoDIR Sprint Tracking Info</div>
@@ -85,6 +86,19 @@
     </footer>
     </div>
 </main>
+
+<!-- DLL Analysis Modal -->
+<div id="dllModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2 class="modal-title">DLL Analysis</h2>
+    <p class="modal-description">text text explain text, more text...metaphor...blah blah</p>
+    <div class="modal-images">
+      <img src="images/Pasted image 20250522140135.png" alt="DLL Screenshot 1">
+      <img src="images/Pasted image 20250522140242.png" alt="DLL Screenshot 2">
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
