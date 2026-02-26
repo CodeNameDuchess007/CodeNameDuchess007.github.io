@@ -1,4 +1,9 @@
 
+function toggleMenu() {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+}
+
 function openModal(id) {
     document.getElementById(id).style.display = 'block';
 }
