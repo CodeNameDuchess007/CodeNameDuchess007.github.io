@@ -314,6 +314,12 @@ footer a:hover {
     margin-bottom: 20px;
 }
 
+.project-text a, .project-text a:visited, .project-text a:hover, .project-text a:active {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .project-images {
     flex: 1;
     display: flex;
