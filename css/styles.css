@@ -315,7 +315,7 @@ footer a:hover {
 }
 
 .project-text a, .project-text a:visited, .project-text a:hover, .project-text a:active {
-    color: #ffffff;
+    color: #e9973f;
     font-weight: 600;
     text-decoration: none; /* Keep this to override defaults */
     position: relative; /* For positioning the pseudo-element */
