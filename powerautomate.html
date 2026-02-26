@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Automate Projects | Sergio Suarez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Hamburger Button -->
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<nav class="sidebar">
+    <div class="logo"><img src="images/logo_03.png" alt="logo"></div>
+    <ul>
+        <li><a href="index.html"><i class="fi fi-sr-home"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="fi fi-sr-user"></i> About</a></li>
+        <li><a href="powerbi.html"><i class="fi fi-sr-chart-pie"></i> Power BI</a></li>     
+        <li><a href="powerautomate.html" class="active-link"><i class="fi fi-sr-bolt"></i> Automation</a></li>
+        <li><a href="canvasapp.html"><i class="fi fi-sr-edit"></i> Canvas App</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="main-container">
+        <section>
+            <h2>Power Automate Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>Automation Approval</h3>
+                    <p>This PowerAutomate Flow was created to handle, and direct, the automation needed for the Travel App (created in Canvas). The steps within this flow responded to the 'triggering event', then dissected what was needed, put them into their proper variable holders, sent out "approval request" to the individuals chain of command and notified the requestor of their status'. This was a very involved process and had me testing the limits of my understanding. <br>It was a great lesson though and a great project.</p>
+                </div>
+                <div class="project-images">
+                    <img src="images/Pasted image 20250522140937.png" alt="Automation Screenshot 1">
+                    <img src="images/Pasted image 20250522141010.png" alt="Automation Screenshot 2">
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>Custom PDF Creation</h3>
+                    <p>This PowerAutomate Flow was inserted into the Automation Approval Flow. At presentation, I had a colleague ask if there was a way to make the data they input available to send up their companies travel department as well. I gave it a try and found out that it is possible, <b>IF YOU USE THE BUSINESS SUITE</b> that Office365 offers. <br><br>Our organization has it, I found a way to create a custom MS Word document and then have it create a PDF of each individual requester. Therein including all pertinent information they would need to present.</p>
+                </div>
+                <div class="project-images">
+                    <img src="images/Pasted image 20250522141216.png" alt="PDF Automation Screenshot 1">
+                    <img src="images/Pasted image 20250707153454.png" alt="PDF Automation Screenshot 2">
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <p>Connect: <a href="https://github.com/CodeNameDuchess007" target="_blank">GitHub</a> | <a href="mailto:sergio.analytics@outlook.com">Email</a></p>
+            <p>© 2025 Sergio Suarez. All rights reserved.</p>
+        </footer>
+    </div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

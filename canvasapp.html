@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas App Projects | Sergio Suarez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Hamburger Button -->
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+<nav class="sidebar">
+    <div class="logo"><img src="images/logo_03.png" alt="logo"></div>
+    <ul>
+        <li><a href="index.html"><i class="fi fi-sr-home"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="fi fi-sr-user"></i> About</a></li>
+        <li><a href="powerbi.html"><i class="fi fi-sr-chart-pie"></i> Power BI</a></li>     
+        <li><a href="powerautomate.html"><i class="fi fi-sr-bolt"></i> Automation</a></li>
+        <li><a href="canvasapp.html" class="active-link"><i class="fi fi-sr-edit"></i> Canvas App</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="main-container">
+        <section>
+            <h2>Canvas App</h2>
+            <p style="margin-bottom: 40px; color: #c9d1d9; font-size: 1.1em; line-height: 1.6;">I've just started diving into Canvas App creation. I was, however, able to create a App for our organization to use for informing travel and having approval be automatically sent up each directorates chain of command. <br>I then had the data written to a SharePoint List, so that I can import the data into Power BI and create an analysis of travel for our finance department. <br>This was a challenging endeavour that tested my ability to integrate SharePoint, Power Automate, and Canvas App together to work seamlessly. An unforeseen "<b>BONUS</b>" to this was that I figured out how to create a custom PDF, that wrote data from the users input, and sent it to multiple recipients, JUST using PowerAutomate.</p>
+
+            <!-- Project 1 -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>JTNC Travel Request</h3>
+                    <p>This is the Canvas App I created to allow our organization to track submitted requests and analyze requests, as well as the expenses, in each Directorate. <br>After the request is submitted, it is written to a SharePoint List for further analysis with Power BI.</p>
+                </div>
+                <div class="project-images">
+                    <img src="images/Pasted image 20250707145314.png" alt="PDF Automation Screenshot 1">
+                    <img src="images/Pasted image 20250707145358.png" alt="PDF Automation Screenshot 2">
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <p>Connect: <a href="https://github.com/CodeNameDuchess007" target="_blank">GitHub</a> | <a href="mailto:sergio.analytics@outlook.com">Email</a></p>
+            <p>© 2025 Sergio Suarez. All rights reserved.</p>
+        </footer>
+    </div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

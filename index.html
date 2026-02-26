@@ -17,11 +17,11 @@
 <nav class="sidebar">
     <div class="logo"><img src="images/logo_03.png" alt="logo"></div>
     <ul>
-        <li><a href="#home"><i class="fi fi-sr-home"></i> Home</a></li>
+        <li><a href="index.html" class="active-link"><i class="fi fi-sr-home"></i> Home</a></li>
         <li><a href="#about"><i class="fi fi-sr-user"></i> About</a></li>
-        <li><a href="#powerbi"><i class="fi fi-sr-chart-pie"></i> Power BI</a></li>     
-        <li><a href="#powerautomate"><i class="fi fi-sr-bolt"></i> Automation</a></li>
-        <li><a href="#canvasapp"><i class="fi fi-sr-edit"></i> Canvas App</a></li>
+        <li><a href="powerbi.html"><i class="fi fi-sr-chart-pie"></i> Power BI</a></li>     
+        <li><a href="powerautomate.html"><i class="fi fi-sr-bolt"></i> Automation</a></li>
+        <li><a href="canvasapp.html"><i class="fi fi-sr-edit"></i> Canvas App</a></li>
     </ul>
 </nav>
 
@@ -50,127 +50,12 @@
             <p>I am currently sharpening my skills for Data Analytics (Power BI) and how to integrate it with SalesForce. I am also looking to start re-exploring API hacking.</p>
         </section>
 
-    <section id="powerbi" class="projects">
-        <h2>Power BI Projects</h2>
-        <div class="project-grid">
-            <div class="project-item" data-modal="dllModal">DLL Analysis</div>
-            <div class="project-item" data-modal="ssidModal">SSID Action Items Metrics</div>
-            <div class="project-item" data-modal="cmgModal">CM Modernization Timeline</div>
-            <div class="project-item" data-modal="sprintModal">DoDIR Sprint Tracking Info</div>
-        </div>
-    </section>
-
-    <section id="powerautomate" class="projects">
-        <h2>Power Automate</h2>
-        <div class="project-grid">
-            <div class="project-item" data-modal="autoModal">Automation Approval</div>
-            <div class="project-item" data-modal="pdfModal">Custom PDF Creation</div>
-        </div>
-    </section>
-
-    <section id="canvasapp" class="canvasapp">
-        <h2>Canvas App</h2>
-        <p>I've just started diving into Canvas App creation. I was, however, able to create a App for our organization to use for informing travel and having approval be automatically sent up each directorates chain of command. <br>I then had the data written to a SharePoint List, so that I can import the data into Power BI and create an analysis of travel for our finance department. <br>This was a challenging endeavour that tested my ability to integrate SharePoint, Power Automate, and Canvas App together to work seamlessly. An unforeseen "<b>BONUS</b>" to this was that I figured out how to create a custom PDF, that wrote data from the users input, and sent it to multiple recipients, JUST using PowerAutomate.</p>
-        <div class="project-item" data-modal="trvlModal">JTNC Travel Request</div>
-    </section>
-
     <footer>
         <p>Connect: <a href="https://github.com/CodeNameDuchess007" target="_blank">GitHub</a> | <a href="mailto:sergio.analytics@outlook.com">Email</a></p>
         <p>© 2025 Sergio Suarez. All rights reserved.</p>
     </footer>
     </div>
 </main>
-
-<!-- DLL Analysis Modal -->
-<div id="dllModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 class="modal-title">DLL Analysis</h2>
-    <p class="modal-description">This Power BI Dashboard was created to show the team the typs of data being downloaded from our data storages. I was able to source the RAW data from a SharePoint List, that our team maintains. <br> With a lot of DAX scripting and the right visuals, I was able to set-up an easy-to-understand Dashboard where anyone could visit to get the information they desired. I then set-up a "Auto-Refresh" schedule to increase efficiency and make the Dashboard self-reliant. <br>This was a great project. </p>
-    <div class="modal-images">
-      <img src="images/Pasted image 20250522140135.png" alt="DLL Screenshot 1">
-      <img src="images/Pasted image 20250522140242.png" alt="DLL Screenshot 2">
-    </div>
-  </div>
-</div>
-
-<!-- SSID Action Items Metrics Modal -->
-<div id="ssidModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 class="modal-title">SSID Action Items Metrics</h2>
-    <p class="modal-description">This Power BI Dashboard was created to show current "Action Items " that the team was working on. Again, I sourced this from another SharePoint List that the team maintains. I was looking for a more colorful way to show "High Value" Action Items that were being engaged and this also allowed us to see what was needing more attention. </p>
-    <div class="modal-images">
-      <img src="images/Pasted image 20250522140437.png" alt="SSID Action Screenshot 1">
-      <img src="images/Pasted image 20250522140539.png" alt="SSID Action Screenshot 2">
-    </div>
-  </div>
-</div>
-
-<!-- CM Modernization Timeline Modal -->
-<div id="cmgModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 class="modal-title">CM Modernization Timeline</h2>
-    <p class="modal-description">These Power BI Dashboard was created to show a Gantt Chart, as well as a Timeline for presentation to C-Suite personnel. The RAW data was sourced from a Excel Sheet, stored on a SharePoint Data Store. This was done to allow the department to make quick updates without needing a Power BI operator to make changes. <br>The visuals were meant to make it easer on the eyes to look at, while still conveying the importatnt dates and task names. </p>
-    <div class="modal-images">
-      <img src="images/Pasted image 20250522140641.png" alt="Modernization Timeline Screenshot 1">
-      <img src="images/Pasted image 20250707144245.png" alt="Modernization Timeline Screenshot 2">
-    </div>
-  </div>
-</div>
-
-<!-- DoDIR Sprint Tracking Info Modal -->
-<div id="sprintModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 class="modal-title">DoDIR Sprint Tracking Info</h2>
-    <p class="modal-description">This Power BI Dashboard was created to show a more constricted Sprint Tracker for a smaller team we have. The RAW data was sourced from a SharePoint List the team maintained with their specific "labeling" for each sections. This gave us the ability to "fine-tune" to see the major events that were experiencing "BLOCKERS" and allowed for better collaboration within the team. </p>
-    <div class="modal-images">
-      <img src="images/Pasted image 20250522140748.png" alt="Sprint Tracking Screenshot 1">
-    </div>
-  </div>
-</div>
-
-<!-- Automation Approval Modal -->
-<div id="autoModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 class="modal-title">Automation Approval</h2>
-    <p class="modal-description">This PowerAutomate Flow was created to handle, and direct, the automation needed for the Travel App (created in Canvas). The steps within this flow responded to the 'triggering event', then dissected what was needed, put them into their proper variable holders, sent out "approval request" to the individuals chain of command and notified the requestor of their status'. This was a very involved process and had me testing the limits of my understanding. <br>It was a great lesson though and a great project.</p>
-    <div class="modal-images">
-      <img src="images/Pasted image 20250522140937.png" alt="Automation Screenshot 1">
-      <img src="images/Pasted image 20250522141010.png" alt="Automation Screenshot 2">
-    </div>
-  </div>
-</div>
-
-<!-- Custom PDF Creation Modal -->
-<div id="pdfModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 class="modal-title">Custom PDF Creation</h2>
-    <p class="modal-description">This PowerAutomate Flow was inserted into the Automation Approval Flow. At presentation, I had a colleague ask if there was a way to make the data they input available to send up their companies travel department as well. I gave it a try and found out that it is possible, <b>IF YOU USE THE BUSINESS SUITE</b> that Office365 offers. <br>Our organization has it, I found a way to create a custom MS Word document and then have it create a PDF of each individual requester. Therein including all pertinent information they would need to present.</p>
-    <div class="modal-images">
-      <img src="images/Pasted image 20250522141216.png" alt="PDF Automation Screenshot 1">
-      <img src="images/Pasted image 20250707153454.png" alt="PDF Automation Screenshot 2">
-    </div>
-  </div>
-</div>
-
-<!-- JTCN Travel Req. Modal -->
-<div id="trvlModal" class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <h2 class="modal-title">JTNC Travel Request</h2>
-    <p class="modal-description">This is the Canvas App I created to allow our organization to track submitted requests and analyze requests, as well as the expenses, in each Directorate. <br>After the request is submitted, it is written to a SharePoint List for further analysis with Power BI. </p>
-    <div class="modal-images">
-      <img src="images/Pasted image 20250707145314.png" alt="PDF Automation Screenshot 1">
-      <img src="images/Pasted image 20250707145358.png" alt="PDF Automation Screenshot 2">
-    </div>
-  </div>
-</div>
-
 <script src="js/script.js"></script>
 
 </body>
