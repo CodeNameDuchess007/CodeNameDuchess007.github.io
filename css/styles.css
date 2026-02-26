@@ -317,9 +317,28 @@ footer a:hover {
 .project-text a, .project-text a:visited, .project-text a:hover, .project-text a:active {
     color: #ffffff;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none; /* Keep this to override defaults */
+    position: relative; /* For positioning the pseudo-element */
+    padding-bottom: 2px; /* Add some space for the underline */
 }
 
+.project-text a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #58A6FF; /* Use the site's accent color */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.project-text a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .project-images {
     flex: 1;
     display: flex;
