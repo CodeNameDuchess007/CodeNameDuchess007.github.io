@@ -3,7 +3,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #0D1117; /* Darker, more modern background */
     color: #e6edf3; /* Lighter text for better contrast */
-    background: linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.95)), url('../background/minimalist-bg.jpg') no-repeat center center fixed;
+    background-image: linear-gradient(rgba(13, 17, 23, 0.5), rgba(13, 17, 23, 0.8)), url('../background/minimalist-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 .sidebar {
@@ -90,15 +93,6 @@ main {
     padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
-}
-.hero img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 25px;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 30px rgba(0, 191, 255, 0.3); /* Deep sky blue glow */
 }
 .hero h1 {
     margin-bottom: 15px;
