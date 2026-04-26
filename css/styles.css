@@ -3,98 +3,102 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #0D1117; /* Darker, more modern background */
     color: #e6edf3; /* Lighter text for better contrast */
-    background-image: linear-gradient(rgba(13, 17, 23, 0.5), rgba(13, 17, 23, 0.8)), url('../background/minimalist-bg.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
-.sidebar {
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: fixed;
     top: 0;
     left: 0;
-    width: 280px; /* Slightly narrower */
-    height: 100%;
-    background: rgba(13, 17, 23, 0.7); /* Semi-transparent background */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    transition: transform 0.3s ease;
+    width: 100%;
     z-index: 1000;
+    box-sizing: border-box;
 }
-.sidebar .logo {
-    text-align: center;
-    margin-bottom: 40px; /* More space */
-    padding: 0 10px;
+.top-nav .logo {
+    margin-bottom: 0;
 }
-.logo img {
-    max-width: 240px; /* Adjusted size */
-    height: auto;  
+.top-nav .logo img {
+    max-height: 50px;
+    width: auto;
 }
 .menu-toggle {
     display: none;
-    position: fixed;
-    top: 20px;
-    left: 20px;
     background: rgba(33, 38, 45, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #f0f0f0;
     font-size: 1.5rem;
     cursor: pointer;
-    z-index: 1001; /* Make sure it's on top */
     border-radius: 8px;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
 }
-.sidebar ul {
+.top-nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
-.sidebar ul li {
-    margin: 10px 20px; /* Vertical and horizontal margin */
-    text-align: left; /* Align text to the left */
+.top-nav ul li {
+    margin: 0;
 }
-.sidebar ul li a {
+.top-nav ul li a {
     color: #f0f0f0;
     text-decoration: none;
-    font-weight: 500; /* Slightly lighter weight */
+    font-weight: 500;
     font-size: 1.1em;
-    display: flex; /* Use flex for alignment */
+    display: flex;
     align-items: center;
-    padding: 12px 15px; /* Padding for a larger click area */
+    padding: 10px 15px;
     border-radius: 8px;
     transition: background 0.3s, color 0.3s;
 }
-.sidebar ul li a:hover, .sidebar ul li a.active-link {
+.top-nav ul li a:hover, .top-nav ul li a.active-link {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
 }
-.sidebar ul li a i {
-    margin-right: 12px; /* More space for icon */
-    font-size: 1.3em;
-    vertical-align: middle;
-    width: 24px; /* Fixed width for alignment */
-    text-align: center;
+.top-nav ul li a i {
+    margin-right: 8px;
+    font-size: 1.2em;
 }
 main {
-    margin-left: 280px; /* Match new sidebar width */
+    margin-left: 0;
     padding: 40px;
+    padding-top: 100px;
 }
 .main-container {
     max-width: 960px; /* Wider container */
     margin: 0 auto;
     padding: 20px;
 }
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    max-width: 1000px;
+.split-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px 80px 20px;
+    max-width: 1100px;
     margin: 0 auto;
 }
-.hero h1 {
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-text h1 {
     margin-bottom: 15px;
     font-size: 3.5em; /* Larger font */
     font-weight: 600;
@@ -105,16 +109,16 @@ main {
     background-clip: text;
     text-fill-color: transparent;
 }
-.minimalist-hero {
-    padding: 80px 20px;
-    background: rgba(33, 38, 45, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 0 0 30px 30px;
-    margin-bottom: 60px;
-}
-.hero p {
+.hero-text p {
     font-size: 1.2em;
-    color: #8b949e; /* Softer color */
+    color: #8b949e;
+    line-height: 1.6;
+}
+.hero-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 section {
     margin-bottom: 80px;
@@ -274,45 +278,43 @@ footer a:hover {
     text-decoration: underline;
 }
 @media (max-width: 768px) {
-    .sidebar {
-        transform: translateX(-100%);
-        width: 100%;
-        height: 100vh; /* Full height on mobile */
-        top: 0;
-        border-right: none;
-        background: rgba(13, 17, 23, 0.95); /* More opaque on mobile */
-    }
-    .sidebar.active {
-        transform: translateX(0);
-    }
     .menu-toggle {
         display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
-    .sidebar ul {
-        text-align: center;
-        margin-top: 60px;
+    .top-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
     }
-    .sidebar ul li {
-        display: block;
-        margin: 20px 0;
-        text-align: center;
+    .top-nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        gap: 5px;
     }
-    .sidebar ul li a {
-        justify-content: center;
+    .top-nav ul.active {
+        display: flex;
     }
     main {
-        margin-left: 0;
         padding: 20px;
-        padding-top: 80px; /* Space for menu toggle */
+        padding-top: 100px;
     }
-    .hero {
-        padding-top: 20px;
+    .split-hero {
+        flex-direction: column;
+        text-align: center;
     }
-    .hero h1 {
+    .hero-text {
+        text-align: center;
+    }
+    .hero-text h1 {
         font-size: 2.5em;
     }
-    .hero p {
-        font-size: 1.1em;
+    .hero-image {
+        justify-content: center;
     }
     .split-section {
         flex-direction: column;

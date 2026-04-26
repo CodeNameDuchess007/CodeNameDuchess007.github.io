@@ -11,11 +11,9 @@
 </head>
 <body>
 
-<!-- Hamburger Button -->
-<button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-<nav class="sidebar">
+<nav class="top-nav">
     <div class="logo"><img src="images/logo_03.png" alt="logo"></div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <ul>
         <li><a href="index.html" class="active-link"><i class="fi fi-sr-home"></i> Home</a></li>
         <li><a href="#about"><i class="fi fi-sr-user"></i> About</a></li>
@@ -26,10 +24,15 @@
 </nav>
 
 <main>
-    <!-- Hero sec out wide -->
-    <section id="home" class="hero minimalist-hero">
-        <h1>Sergio Suarez | Portfolio</h1>
-        <p>Turning Data into Insights | Power BI & Automation Expert</p>
+    <section id="home" class="split-hero">
+        <div class="hero-text">
+            <h1>Sergio Suarez | Portfolio</h1>
+            <p>Turning Data into Insights | Power BI & Automation Expert</p>
+        </div>
+        <div class="hero-image">
+            <!-- Update this path to images/background/minimalist-bg.jpg if you moved the file! -->
+            <img src="background/minimalist-bg.jpg" alt="Hero Minimalist Background">
+        </div>
     </section>
     <!-- start the container -->
     <div class="main-container">

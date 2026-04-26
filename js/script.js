@@ -1,7 +1,7 @@
 
 function toggleMenu() {
-    var sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('active');
+    var navUl = document.querySelector('.top-nav ul');
+    navUl.classList.toggle('active');
 }
 
 function openModal(id) {
