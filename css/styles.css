@@ -3,8 +3,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #0D1117; /* Darker, more modern background */
     color: #e6edf3; /* Lighter text for better contrast */
-    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
-    background-size: 20px 20px;
+    background: linear-gradient(rgba(13, 17, 23, 0.85), rgba(13, 17, 23, 0.95)), url('../background/minimalist-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .sidebar {
     position: fixed;
@@ -111,6 +111,13 @@ main {
     background-clip: text;
     text-fill-color: transparent;
 }
+.minimalist-hero {
+    padding: 80px 20px;
+    background: rgba(33, 38, 45, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 60px;
+}
 .hero p {
     font-size: 1.2em;
     color: #8b949e; /* Softer color */
@@ -130,6 +137,35 @@ h3 {
     margin-top: 30px;
     color: #c9d1d9;
     font-size: 1.4em;
+}
+/* Split Section for About */
+.split-section {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+.about-column {
+    flex: 1;
+}
+.about-column p {
+    line-height: 1.8;
+    color: #8b949e;
+}
+.qualifications-card {
+    background: rgba(33, 38, 45, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.qualifications-card ul {
+    list-style: none;
+    padding: 0;
+}
+.qualifications-card li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .project-grid {
     display: grid;
@@ -151,6 +187,10 @@ h3 {
     transform: translateY(-5px); /* Lift effect */
     border-color: rgba(88, 166, 255, 0.8); /* Highlight with accent color */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.posts-section a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .modal {
@@ -279,6 +319,9 @@ footer a:hover {
     }
     .hero p {
         font-size: 1.1em;
+    }
+    .split-section {
+        flex-direction: column;
     }
     .modal-content {
         width: 90%;
